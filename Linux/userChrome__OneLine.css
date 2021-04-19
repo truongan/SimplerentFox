@@ -20,6 +20,7 @@ Here you can change the opacity level and the main color of the browser. Also th
 */
 
 :root {
+    --urlbar-width:32vw;
     --srf-color-primary: rgba(20, 20, 20, 0.6);
     --srf-color-selection: #66a6d9;
 }
@@ -65,36 +66,18 @@ T A B S
 #TabsToolbar {
     margin-top: -1px !important;
     margin-bottom: 1px !important;
-    margin-left: 35vw !important;
+    margin-left: var(--urlbar-width) !important;
     max-height: 32px !important;
 }
 
-/* .tab-background {
+.tab-background {
     border: none !important;
-} */
+}
 
 .tab-background[selected='true'] {
     -moz-appearance: none !important;
-    /* background-image: none !important;  */
-    /* background:
-    linear-gradient(
-        to right, 
-        #B7F8DB
-        #50A7C2
-      )
-      left 
-      bottom
-      #ffc3a0  
-      no-repeat !important;  */
-      background: radial-gradient(circle, rgba(104,178,160,1) 0%, rgba(44,105,117,1) 100%) !important; 
-      /* background-size: 100% 30px!important; */
-      border: 0 !important;
-      border-image: none !important;
+    background-image: none !important;
 }
-
-.tab-background[selected="true"] {
-    background-color: red; /* this sets the color of the tab background */
-    }
 
 .tabbrowser-tabs {
     border: none !important;
@@ -152,14 +135,14 @@ Here you can comment if you want your buttons to be showed up!
 }
 
 /* This one is the "shield" icon  */
-/* #tracking-protection-icon-container {
+#tracking-protection-icon-container {
     display: none !important;
-} */
+}
 
 /* This one is the hamburger menu!  */
-/* #PanelUI-button {
+#PanelUI-button {
     display: none !important;
-} */
+}
 
 /* This one removes the close button  */
 .tabbrowser-tab:not([pinned]) .tab-close-button {
@@ -167,19 +150,19 @@ Here you can comment if you want your buttons to be showed up!
 }
 
 /* This one clears the tabs icon when they're not pinned  */
-/* .tabbrowser-tab:not([pinned]) .tab-icon-image {
+.tabbrowser-tab:not([pinned]) .tab-icon-image {
     display: none !important;
-} */
+}
 
 /* Removing the zoom button  */
-/* #urlbar-zoom-button {
+#urlbar-zoom-button {
     display: none !important;
-} */
+}
 
 /* Page action (right three dash button)  */
-/* #pageActionButton {
+#pageActionButton {
     display: none !important;
-} */
+}
 
 /* 
 N A V B A R
@@ -196,7 +179,7 @@ N A V B A R
     border-bottom-width: 0px !important;
     margin-top: -32px !important;
     margin-bottom: -1px !important;
-    margin-right: 65vw !important;
+    margin-right: calc(100vw - var(--urlbar-width)) !important;
     height: 32px !important;
 }
 
@@ -308,7 +291,7 @@ U R L - B A R
 }
 
 #urlbar-container {
-    min-width: 250px !important;
+    min-width: 150px !important;
 }
 
 #urlbar {
@@ -337,7 +320,7 @@ In order to show it, you must change the value of "transparent" in the first blo
 and erease the second block. 
 */
 
-/* #urlbar-background {
+#urlbar-background {
     background: transparent !important;
     border: transparent !important;
     animation: none !important;
@@ -345,7 +328,7 @@ and erease the second block.
 
 #urlbar .urlbarView {
     display: none !important;
-} */
+}
 
 /* 
 Designed and Coded by Miguel R. Ávila: https://github.com/MiguelRAvila
