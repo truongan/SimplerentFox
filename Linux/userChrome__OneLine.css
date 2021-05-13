@@ -148,13 +148,13 @@ Here you can comment if you want your buttons to be showed up!
 
 /* This one is the spacer between tabs and border  */
 .titlebar-spacer {
-    /*display: none !important;*/
+    display: none !important;
 }
 
 /* This one is the "shield" icon  */
-/* #tracking-protection-icon-container {
+ #tracking-protection-icon-container {
     display: none !important;
-} */
+} 
 
 /* This one is the hamburger menu!  */
 /* #PanelUI-button {
@@ -177,9 +177,9 @@ Here you can comment if you want your buttons to be showed up!
 } */
 
 /* Page action (right three dash button)  */
-/* #pageActionButton {
+ #pageActionButton {
     display: none !important;
-} */
+} 
 
 /* 
 N A V B A R
@@ -289,9 +289,9 @@ U R L - B A R
     height: 100% !important;
 }
 
-#identity-box {
+/*#identity-box {
     display: none;
-}
+}*/
 
 .urlbarView-row {
     padding: 0px !important;
@@ -316,18 +316,18 @@ U R L - B A R
     box-shadow: none !important;
 }
 
-#page-action-buttons {
+/*#page-action-buttons {
     display: none !important;
 }
-
+*/
 .urlbarView {
     margin: 0px !important;
     width: 100% !important;
 }
 
-#urlbar-label-box, #urlbar-search-mode-indicator {
+/*#urlbar-label-box, #urlbar-search-mode-indicator {
     display: none !important;
-}
+}*/
 
 /* 
 If you want to show the URLBar extended you must
