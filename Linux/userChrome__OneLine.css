@@ -66,7 +66,6 @@ T A B S
     margin-top: -1px !important;
     margin-bottom: 1px !important;
     margin-left: 35vw !important;
-    max-height: 32px !important;
 }
 
 /* .tab-background {
@@ -194,10 +193,10 @@ N A V B A R
     box-shadow: none !important;
     border-top-width: 0px !important;
     border-bottom-width: 0px !important;
-    margin-top: -32px !important;
+    margin-top: -44px !important;
     margin-bottom: -1px !important;
     margin-right: 65vw !important;
-    height: 32px !important;
+    height: 44px !important;
 }
 
 /* 
@@ -280,7 +279,7 @@ U R L - B A R
 }
 
 #urlbar[breakout-extend] #urlbar-input-container {
-    height: calc(var(--tab-min-height) - 3px) !important;
+    /* height: calc(var(--tab-min-height) - 3px) !important; */
     padding: 0px !important;
 }
 
